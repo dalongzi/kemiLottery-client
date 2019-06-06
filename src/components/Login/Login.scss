@@ -1,0 +1,43 @@
+.Login{
+  width: 100%;
+  // 登录表单
+  .login-form{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    .login-input{
+      width: 90%;
+      height: 50px;
+      background: #fff;
+      margin: 20px auto;
+      border: 1px solid #c5cddb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      input{
+        outline: none;
+        border: none;
+        width: 90%;
+        height: 70%;
+      }
+    }
+    .active{
+      border: 1px solid #4aafe9;
+    }
+    .login-btn{
+      display: block;
+      width: 90%;
+      height: 50px;
+      background: #b01e35;
+      border-radius: 10px;
+      border: none;
+      margin: 0 auto;
+      color: #fff;
+      font-size: 20px;
+      outline: none;
+      &:active{
+        color: #ccc;
+      }
+    }
+  }
+}

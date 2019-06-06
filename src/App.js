@@ -1,12 +1,23 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import {BrowserRouter,Switch} from 'react-router-dom'
 
-class App extends React.Component{
-  render(){
+import {routes,SubRoute} from './router/router'
+
+class App extends React.Component {
+  render() {
     return (
-      <div className="App">
-        App
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Switch>
+            {routes.map((item,index)=>{
+              return (
+                <SubRoute key={index} {...item} />
+              )
+            })}
+          </Switch>
+        </div>
+      </BrowserRouter>
     )
   }
 }

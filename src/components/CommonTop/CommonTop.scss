@@ -1,0 +1,31 @@
+.CommonTop{
+  width: 100%;
+  height: 51px;
+  background: #d91d37;
+  text-align: center;
+  line-height: 51px;
+  position: relative;
+  color: #fff;
+  button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 70px;
+    height: 100%;
+    color: #fff;
+  }
+  h1{
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
