@@ -67,8 +67,6 @@ class Login extends React.Component {
       myaxios.post(api.login,{loginType:loginType,loginValue:loginValue,password:password})
         .then((resp)=>{
           if(resp.data.success){
-            console.log(resp.data);
-            console.log(this);
             this.props.history.goBack();
           }else{
             this.setState({
@@ -85,9 +83,9 @@ class Login extends React.Component {
   render() {
     return (
       <div className="Login">
-        <CommonTop title="登录" history={this.props.history} />
+        <CommonTop title="登录" history={this.props.history} rightLink="注册" path="/register" />
 
-
+        {/* 登录表单 */}
         <div className="login-form">
           <form>
             <div className="login-input">
@@ -114,6 +112,7 @@ class Login extends React.Component {
             <button type="button" className="login-btn" onClick={e=>this.loginBtn(e)}>登 录</button>
           </form>
         </div>
+
 
 
       </div>

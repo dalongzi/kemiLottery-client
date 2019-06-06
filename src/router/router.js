@@ -4,11 +4,16 @@ import loadable from '@loadable/component'
 
 const Home = loadable(() => import('../components/Home/Home'))
 const Login = loadable(() => import('../components/Login/Login'))
+const Register = loadable(()=>import('../components/Register/Register'))
 
 export const routes = [
   {
     path: '/login',
     component: Login
+  },
+  {
+    path: '/register',
+    component: Register
   },
   {
     path: '/',

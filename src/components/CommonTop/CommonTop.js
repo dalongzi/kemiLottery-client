@@ -11,7 +11,7 @@ class CommonTop extends React.Component {
     return (<div className="CommonTop">
       <h1>{this.props.title}</h1>
       <button onClick={e=>this.goBack(e)}>返回</button>
-      <Link to='/'>{this.props.rightLink}</Link>
+      <Link to={this.props.path}>{this.props.rightLink}</Link>
     </div>)
   }
 }
